@@ -6,7 +6,7 @@
 .obsidian/core-plugins.json
 
 # ====================================================================
-# 🛡️ SEGURIDAD Y CREDENCIALES CRÍTICAS (NUNCA SUBIR)
+# 🛡️ SEGURIDAD Y CREDENCIALES CRÍTICAS
 # ====================================================================
 .env
 .env.*
@@ -14,9 +14,8 @@
 http-client.private.env.json
 
 # ====================================================================
-# 🐋 CONTENEDORES E INFRAESTRUCTURA (Podman, Docker, OCI)
+# 🐋 CONTENEDORES E INFRAESTRUCTURA (Docker / Podman)
 # ====================================================================
-# Evita subir estados locales de contenedores o configuraciones de override
 .pids/
 *.pid
 *.sock
@@ -25,7 +24,7 @@ compose.override.yaml
 docker-compose.override.yml
 
 # ====================================================================
-# 💻 SISTEMAS OPERATIVOS (Windows, Linux, macOS)
+# 💻 SISTEMAS OPERATIVOS Y SISTEMAS DE ARCHIVOS
 # ====================================================================
 # Windows
 Thumbs.db
@@ -41,7 +40,7 @@ Desktop.ini
 .Trash-*
 .fuse_hidden*
 
-# macOS (Preparación para iOS/Swift)
+# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -51,14 +50,14 @@ Icon
 # ====================================================================
 # 🛠️ ENTORNOS DE DESARROLLO (IDEs)
 # ====================================================================
-# Suite JetBrains (WebStorm, GoLand, RustRover, PyCharm, Android Studio)
+# Suite JetBrains
 .idea/
 *.iml
 *.iws
 .idea_modules/
 .idea/httpRequests/
 
-# VS Code (Configuración corregida para permitir exclusiones)
+# VS Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -67,25 +66,13 @@ Icon
 .history/
 
 # ====================================================================
-# 🌐 ECOSISTEMA WEB (HTML, CSS, JS, TS, Astro, Solid, React, Angular)
+# 🌐 ECOSISTEMA WEB / RUNTIMES
 # ====================================================================
-# Dependencias y Compilación
 node_modules/
 dist/
 build/
 out/
-.astro/
-.angular/
-.next/
-.nuxt/
-
-# Tipados autogenerados
-src/env.d.ts
-
-# Cachés y Logs
 .cache/
-.tailwindcss/
-.eslintcache
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -93,65 +80,10 @@ pnpm-debug.log*
 .bun-error.log*
 
 # ====================================================================
-# ⚙️ BACKEND & SISTEMAS (Python, Go, Rust, Zig)
+# ⚙️ LOGS Y TEMPORALES DE PROYECTO
 # ====================================================================
-# 🦀 Rust
-/target/
-**/*.rs.bk
-Cargo.lock
-
-# ⚡ Zig
-zig-cache/
-zig-out/
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dylib
-*.dll
-
-# 🐍 Python
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-venv/
-env/
-ENV/
-*.egg-info/
-
-# 🐹 Go
-*.exe
-*.exe~
-*.test
-*.out
-/vendor/
-
-# ====================================================================
-# 📱 MÓVIL Y NATIVO (Kotlin/Android & Swift/iOS)
-# ====================================================================
-# 🤖 Android / Kotlin
-.gradle/
-local.properties
-/.idea/caches/build_file_checksums.ser
-/captures/
-.externalNativeBuild/
-.cxx/
-
-# 🍎 iOS / Swift
-DerivedData/
-*.hmap
-*.xccheckout
-*.xcscmblueprint
-xcuserdata/
-Pods/
-.build/
-Packages/
-
-# ====================================================================
-# ⏳ ESTADO LOCAL Y TEMPORALES (JetBrains HTTP Client / Scripts)
-# ====================================================================
+# Se excluyen logs generados por cron/scripts para no ensuciar el repo
+*.log
 http-client.cookies
 *.json.download
 *.html.download
