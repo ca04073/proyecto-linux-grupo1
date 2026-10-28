@@ -1,11 +1,11 @@
 # Proyecto Final: Servidor de Servicios GNU/Linux y Contenedores
 
-**Universidad de El Salvador**  
-**Facultad Multidisciplinaria de Occidente**  
-**Departamento de Ingeniería y Arquitectura**  
-**Carrera:** Ingeniería en Desarrollo de Software  
-**Asignatura:** Introducción al Software Libre (ISL135) — Ciclo II 2026  
-**Grupo de Trabajo:** Grupo 1  
+**Universidad de El Salvador**
+**Facultad Multidisciplinaria de Occidente**
+**Departamento de Ingeniería y Arquitectura**
+**Carrera:** Ingeniería en Desarrollo de Software
+**Asignatura:** Introducción al Software Libre (ISL135) — Ciclo II 2026
+**Grupo de Trabajo:** Grupo 1
 
 ---
 
@@ -69,9 +69,9 @@ El repositorio sigue un flujo estructurado de integración continua:
 
 ---
 
-## 6. Integrantes del Equipo
+## 6. Integrantes del Equipo 1
 
-- **Integrante 1:** Rickelmy Josepf Cubías Alvarado — Carnet: `CA04073`
-- **Integrante 2:** *(Nombre y Carnet del compañero)*
-- **Integrante 3:** *(Nombre y Carnet del compañero)*
-- **Integrante 4:** *(Nombre y Carnet del compañero)*
+- **Integrante 1:** *Rickelmy Josepf Cubías Alvarado* — Carnet: `CA04073`
+- **Integrante 2:** *Uber de Jesús Barillas Quijada* — Carnet: `BQ24002`
+- **Integrante 3:** *Gerardo Andrés Rodríguez Herrador* — Carnet: `RH19056`
+- **Integrante 4:** *Carlos Ernesto García Ocampo* — Carnet: `GO25003`
