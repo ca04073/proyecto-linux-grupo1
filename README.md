@@ -69,7 +69,7 @@ El repositorio sigue un flujo estructurado de integración continua:
 
 ---
 
-## 6. Integrantes del Equipo
+## 6. Integrantes del Equipo 1
 
 - **Integrante 1:** *Rickelmy Josepf Cubías Alvarado* — Carnet: `CA04073`
 - **Integrante 2:** *Uber de Jesús Barillas Quijada* — Carnet: `BQ24002`
