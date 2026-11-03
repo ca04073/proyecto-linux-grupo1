@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Servidor Web - Grupo 1</title>
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #222;
+            background: #fff;
+            max-width: 720px;
+            margin: 2em auto;
+            padding: 0 1em;
+            line-height: 1.5;
+        }
+        h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+        h2 { font-size: 1.15em; margin-top: 2em; }
+        .sub { color: #555; margin-top: 0; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 1.5em 0; }
+        code, pre {
+            font-family: "Courier New", Courier, monospace;
+            background: #f4f4f4;
+        }
+        code { padding: 0 3px; }
+        pre { padding: 10px; border: 1px solid #ddd; overflow-x: auto; }
+        a { color: #0645ad; text-decoration: underline; }
+        a:visited { color: #0b0080; }
+        ul { padding-left: 1.4em; }
+        footer { color: #666; font-size: 0.9em; margin-top: 3em; }
+    </style>
 </head>
 <body>
-    <h1>Proyecto Final ISL - Servidor Web Grupo 1</h1>
-    <p>Desplegado sobre Nginx en Debian GNU/Linux</p>
+    <h1>Servidor Web del Grupo 1</h1>
+    <p class="sub">Nginx sobre Docker &middot; Introducción al Software Libre</p>
+    <hr>
+
+    <p>El servicio está en línea. Esta página se sirve desde un contenedor
+    <code>nginx</code> y corresponde al proyecto ISL
+    <em>Introducción al Software Libre</em>.</p>
+
+    <h2>Estado del servicio</h2>
+    <ul>
+        <li>Servidor HTTP: Nginx</li>
+        <li>Despliegue: Docker (imagen <code>nginx:alpine</code>)</li>
+        <li>Contenido: HTML estático</li>
+    </ul>
+
+    <h2>Software utilizado</h2>
+    <p>Todo el stack está compuesto por software libre:</p>
+    <ul>
+        <li>Nginx &mdash; servidor HTTP (licencia BSD de 2 cláusulas)</li>
+        <li>Docker Engine &mdash; contenedores (Apache 2.0)</li>
+        <li>Alpine Linux &mdash; imagen base del contenedor (MIT)</li>
+    </ul>
+
+    <h2>Cómo levantar este sitio</h2>
+<pre><code>docker build -t servidor-grupo1 .
+docker run -d --name nginx-custom -p 8081:80 servidor-grupo1</code></pre>
+    <p>Luego abrir <code>http://localhost:8081</code> en el navegador.</p>
+
+    <hr>
+    <footer>
+        Grupo 1 &middot; Introducción al Software Libre &middot; 2026<br>
+        Este sitio se distribuye bajo los mismos términos que el resto del proyecto.
+    </footer>
 </body>
 </html>
