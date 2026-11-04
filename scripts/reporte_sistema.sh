@@ -17,12 +17,14 @@ free -h | awk '/Mem:/ {print "Disponible: " $7 " | Total: " $2}'
 echo
 echo " --- Contenedores Docker Activos ---"
 if command -v docker >/dev/null 2>&1; then
-   if sudo -n -u adminsys docker info >/dev/null 2>&1; then
+    if [ "$(id -un)" = "adminsys" ]; then
+        docker ps -q | wc -l
+    elif sudo -n -u adminsys docker ps -q >/dev/null 2>&1; then
         sudo -n -u adminsys docker ps -q | wc -l
-   else
+    else
         echo "Docker está instalado, pero no se puede consultar el servicio"
     fi
 else
-    echo "Docker no está instalado :( o no está disponible en el PATHH. "
+    echo "Docker no está instalado o no está disponible en el PATH."
 fi
-echo "=:=:=:=:=:=:=:=ISL135 GRUPO 1=:=:=:=:=:=:=:=:=:="
+echo "=:=:=:=:=:=:=:=ISL135 GRUPO 1:=:=:=:=:=:=:=:=:="
